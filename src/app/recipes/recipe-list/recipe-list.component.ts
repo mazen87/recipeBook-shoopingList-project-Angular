@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Recipe} from '../recipe.module';
 
 @Component({
   selector: 'app-recipe-list',
@@ -6,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
+
+  recipes : Recipe[] = [
+    new Recipe('Test Recipe','Recipe description ',
+    'https://get.pxhere.com/photo/egg-dish-food-cuisine-ingredient-produce-menemen-recipe-comfort-food-brunch-meal-frittata-Queso-flameado-breakfast-side-dish-poached-egg-turkish-food-indian-cuisine-1620832.jpg')
+    ,new Recipe('Test Recipe','Recipe description ',
+    'https://get.pxhere.com/photo/egg-dish-food-cuisine-ingredient-produce-menemen-recipe-comfort-food-brunch-meal-frittata-Queso-flameado-breakfast-side-dish-poached-egg-turkish-food-indian-cuisine-1620832.jpg')
+  
+  ]; 
 
   constructor() { }
 
