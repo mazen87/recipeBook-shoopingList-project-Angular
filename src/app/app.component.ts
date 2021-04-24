@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipeBook-shoppingList-project';
+
+  route : string = 'recipe'; 
+
+  onNavigation(routeSelected :string){
+    this.route= routeSelected;
+  }
 }
